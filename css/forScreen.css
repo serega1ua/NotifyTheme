@@ -1,0 +1,652 @@
+ /* сброс Мейера   v2.0 | 20110126   */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	 
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+  /* мои стили  */
+
+   /* задаем размеры div и цвета background */
+   
+	 
+	 #wrapper {
+					  width: 1600px; 
+					  margin-left: auto; 
+					  margin-right: auto;  
+					  border: none}
+  
+  	 #lineOnTop1 {
+	 			    height: 10px; /* Высота блока */
+					background-color: #2ecc71; /* Цвет фона */
+						}
+	 
+	 #header2 	 { 	height: 600px; /* Высота блока */
+				    background-image: url(../img/header.png); /* Путь к фоновому рисунку */
+					border:none;
+ 
+	 }
+	
+	  #referenceIcons3 	 {
+					 
+					height: 335px; /* Высота блока */
+						}
+	 
+	  #searchAndVideo4 	 {
+					height:  427px; /* Высота блока */
+					background-color: #e3e3e3;
+						}
+	 
+	  #galleryOfFacesAndNetworksIcons5 	 {
+					height:  470px;
+					position: relative;
+						}
+	 
+	  #footer6 	 {
+					height:  130px;
+					background-color: #e3e3e3;
+						}
+   
+ 
+
+ 
+	/*подключаем используемые шрифты*/
+
+	@font-face {
+    font-family: 'Helvetica Neue Bold Italic';
+    src: url(../fonts/HelveticaNeueBoldItalic.ttf);
+				}
+				
+	@font-face {
+    font-family: 'Helvetica Neue Italic';
+    src: url(../fonts/HelveticaNeueItalic.ttf);
+				}
+				
+	@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url(../fonts/HelveticaNeueMedium.ttf);
+				}
+				
+	@font-face {
+    font-family: 'Helvetica Neue Regular';
+    src: url(../fonts/HelveticaNeueRegular.ttf);
+				}
+				
+	@font-face {
+    font-family: 'Pacifico Regular';
+    src: url(../fonts/PacificoRegular.ttf);
+				}
+				
+	@font-face {
+    font-family: 'Raleway Bold';
+    src: url(../fonts/RalewayBold.ttf);
+				}
+				
+	@font-face {
+    font-family: 'Raleway Semi Bold';
+    src: url(../fonts/RalewaySemiBold.ttf);
+				}
+				
+	 
+				
+	 
+
+ /*текст в блоке header2*/
+		#header2  {
+		text-align: left; 
+		color: white; /* Цвет символа */
+		  						}
+		
+		#header2  h1 {
+		padding: 172px 0px 0px 326px; /* Поля вокруг текста */
+		font-size: 60pt; /* Размер шрифта в процентах */
+		font-family: 'Pacifico Regular',  Pacifico;
+
+						}
+		
+		#header2  h1 span {
+		color: #2ecc71;
+						}
+		
+		#header2  p {
+		padding: 50px 0px 0px 326px; /* Поля вокруг текста */
+		font-size: 18pt; /* Размер шрифта в процентах */
+		font-family: 'Helvetica Neue Medium',  Helvetica;
+		line-height: 1.5;
+						}
+				
+		nav[role="navigation"]  {
+		padding: 60px 0px 0px 326px; /* Поля вокруг блока */
+						}
+
+		nav[role="navigation"] li {
+		float: left;
+		margin: 0 14px 0 0;
+		padding: 0;
+		opacity: 0.6;
+						}
+		
+		#headerNav ul li div {
+		width: 53px; 
+		height: 53px;
+ 
+		 		}
+		
+		
+		
+		.containerInMenuInHeaderUsual {
+		background-image: url(../img/circleGreyInHeader.png); /* Путь к фоновому рисунку */
+		opacity: 0.6;
+ 		}
+		
+		.containerInMenuInHeader {
+		background-image: url(../img/circleGreyInHeader.png); /* Путь к фоновому рисунку */
+ 		}
+		
+		.greenContainerInMenuInHeader {
+		 background-image: url(../img/circleGreenInHeader.png); /* для hover */
+		opacity: 1;
+ 		}
+		
+		
+		nav[role="navigation"] li  img {
+		padding: 13px 16px 20px 14px;
+		opacity: 0.6; /* Полупрозрачность элемента */
+		}
+		
+		nav[role="navigation"] li  div img.active{
+		opacity: 1; /* для hover */
+		}
+		
+		nav[role="navigation"] li.active1 {
+		opacity: 1;  /* для hover */
+						}
+		
+		#referenceIcons3 {
+		padding: 0 101px 0px 101px;
+		                    }
+		
+		.innerReferenceIcons3 {
+		 background:  url('../img/bgrForInnerReferenceIcons3.png') 50% 25% no-repeat ;
+     		text-align: center;
+		vertical-align: bottom;
+		float: left;
+		width: 465px; 
+		height: 335px; /* Высота блока */		}
+		
+		 .imagInReferenceIcons3{
+		margin: 86px 0px 0px 0px; }
+		
+		.pInReferenceIcons3 {
+		margin: 50px 0px 0px 0px;
+	    font-family: 'Raleway Semi Bold',  Arial;
+		line-height: 1.5;
+		font-size: 22pt;  
+	}
+		
+	.pSmallInReferenceIcons3 {
+		margin: 15px 20px 0px 20px;
+				padding: 0 0 0 0;
+ 		 font-family: 'Helvetica Neue Regular',  Helvetica;
+		line-height: 1.5;
+    font-size: 14pt; 	
+	color: #a5a5a5;
+	}	
+		
+			#searchAndVideo4 {
+		padding: 0 100px 0px 100px;
+		                    }
+							
+			.innerSearchAndVideo4 {
+      		text-align: left;
+		 
+		float: left;
+		width: 700px; 
+		 
+		height: 427px; /* Высота блока */
+			}
+							
+							
+							
+		input[type="text"] {
+		 float:left;
+   border: 1px solid #c8c8c8; 
+      border-radius: 12px 0 0 12px; 
+   -webkit-border-radius: 12px 0 0 12px; /*закругление углов (Google Chrome)*/
+   -moz-border-radius: 12px 0 0 12px; /*закругление углов (FireFox)*/
+   -khtml-border-radius: 12px 0 0 12px; /*закругление углов (Safari)*/
+   background: #ffffff !important; /* желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым*/
+   outline: none; /* удаляет обводку в браузерах хром(желтая) и сафари(синяя)*/
+   height: 54px; /* высота*/
+   width: 300px; /* ширина на свое усмотрение*/
+   color: #cccccc; /*цвет шрифта в обычном состоянии*/
+   font-size: 18px; /* Размер шрифта*/
+   font-family: 'Helvetica Neue Regular',  Helvetica; /* Стиль шрифта*/
+   padding-left:  1.5em; /* отступ от текста */
+}					
+							
+		input[type="text"]:focus {
+  color: #000000;
+  border: 1px solid #000000
+}
+
+.knopka {
+     
+      border-radius: 0 12px 12px 0; 
+   -webkit-border-radius: 0 12px 12px 0; /*закругление углов (Google Chrome)*/
+   -moz-border-radius: 0 12px 12px 0; /*закругление углов (FireFox)*/
+   -khtml-border-radius: 0 12px 12px 0; /*закругление углов (Safari)*/
+ float:left;
+  height: 40px; /* высота*/
+   width: 130px; /* ширина */
+  color: #ffffff; /*цвет шрифта в обычном состоянии*/
+   font-size: 18px; /* Размер шрифта*/
+   font-family: 'Raleway Bold',  Arial; /* Стиль шрифта*/
+   text-align: center;
+    margin-left: -1px; 
+  text-decoration: none; /* убирать подчёркивание у ссылок */
+  user-select: none; /* убирать выделение текста */
+  background: #2ecc71; /* фон кнопки */
+  padding: 18px 29px 0px 24px; /* отступ от текста */
+   font-weight: bold;
+   
+   /*text-shadow: 
+		-0   -1px 0   #90E4B3,
+		 0   -1px 0   #90E4B3,
+		-0    1px 0   #90E4B3,
+		 0    1px 0   #90E4B3,
+		-1px -0   0   #90E4B3,
+		 1px -0   0   #90E4B3,
+		-1px  0   0   #90E4B3,
+		 1px  0   0   #90E4B3,
+		-1px -1px 0   #90E4B3,
+		 1px -1px 0   #90E4B3,
+		-1px  1px 0   #90E4B3,
+		 1px  1px 0   #90E4B3,
+		-1px -1px 0   #90E4B3,
+		 1px -1px 0   #90E4B3,
+		-1px  1px 0   #90E4B3,
+		 1px  1px 0   #90E4B3;*/
+   
+    outline: none; /* убирать контур в Mozilla */
+} 
+.knopka:hover { background: rgb(232,95,76); } /* при наведении курсора мышки */
+.knopka:active { background: rgb(152,15,0); } /* при нажатии */
+
+
+
+.imagInsearchAndVideo4 {
+		padding-top: 60px;
+		padding-left: 180px;}
+		
+		#p1GetNotified  {
+		padding-top: 60px;
+		font-family: 'Raleway Semi Bold',  Arial; /* Стиль шрифта*/
+		font-size: 18px; /* Размер шрифта*/
+		}
+
+		#p2GetNotified  {
+		width: 530px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		line-height: 1.5;
+		color: #9d9d9d;
+		font-family: 'Helvetica Neue Regular',  Helvetica; /* Стиль шрифта*/
+		font-size: 14px; /* Размер шрифта*/
+		}
+
+#galleryOfFacesAndNetworksIcons5 {
+		text-align: center;
+		padding: 60px 0 60px 0;}
+
+
+		#firstTextIngallery  {
+		padding: 0px 380px 0px 380px;
+		line-height: 1.5;
+		color: #848484;
+		font-family: 'Helvetica Neue Regular',  Helvetica; /* Стиль шрифта*/
+		font-size: 14px; /* Размер шрифта*/
+		 font-style: italic;
+		}
+		
+		
+		#secondTextIngallery {
+		padding-top: 30px;
+		line-height: 1.5;
+		color: #2e2e2e;
+		font-family: 'Raleway Bold',  Arial; /* Стиль шрифта*/
+		font-size: 18px; /* Размер шрифта*/
+		}
+		
+		#thirdTextIngallery{
+		padding-top: 60px;
+		line-height: 1.5;
+		color: #000000;
+		font-family: 'Raleway Semi Bold',  Arial; /* Стиль шрифта*/
+		font-size: 22px; /* Размер шрифта*/
+		}
+		
+		
+		#fourthTextIngallery{
+		padding-top: 30px;
+		line-height: 1.5;
+		color: #848484;
+		font-family: 'Helvetica Neue Regular',  Helvetica; /* Стиль шрифта*/
+		font-size: 14px; /* Размер шрифта*/
+		}
+		
+		#galleryFaces { 
+		margin-left: 275px;
+		margin-right: 275px;
+		position: relative; }
+		
+		.image {
+		position: absolute; /* Абсолютное позиционирование */
+				}
+				
+		#imGallery1{   
+		left: 0px;
+				}
+		
+		#imGallery2{   
+		left: 50px;
+				}
+		
+		#imGallery3{   
+		left: 100px;
+				}
+		
+		#imGallery4{   
+		left: 150px;
+				}
+		
+		#imGallery5{   
+		left: 200px;
+				}
+		
+		#imGallery6{   
+		left: 250px;
+				}
+		
+		#imGallery7{   
+		left: 300px;
+				}
+		
+		#imGallery8{   
+		left: 350px;
+				}
+		
+		#imGallery9{   
+		left: 400px;
+				}
+		
+		#imGallery10{   
+		left: 450px;
+				}
+		
+		#imGallery11{   
+		left: 500px;
+				}
+		
+		#imGallery12{   
+		left: 550px;
+				}
+		
+		#imGallery13{   
+		left: 600px;
+				}
+		
+		#imGallery14{   
+		left: 650px;
+				}
+		
+		#imGallery15{   
+		left: 700px;
+				}
+		
+		#imGallery16{   
+		left: 750px;
+				}
+		
+		#imGallery17{   
+		left: 800px;
+				}
+		
+		#imGallery18{   
+		left: 850px;
+				}
+		
+		#imGallery19{   
+		left: 900px;
+				}
+		
+		#imGallery20{   
+		left: 950px;
+				}
+		
+		#imGallery21{   
+		left: 1000px;
+				}
+		 
+		
+		#leftMask{   
+		left: 0px;
+				}
+				
+		#rightMask{   
+		left: 1007px;
+				}
+			
+
+
+		#shadowGallery1{   
+		left: 0px;
+				}
+		
+		#shadowGallery2{   
+		left: 50px;
+				}
+		
+		#shadowGallery3{   
+		left: 100px;
+				}
+		
+		#shadowGallery4{   
+		left: 150px;
+				}
+		
+		#shadowGallery5{   
+		left: 200px;
+				}
+		
+		#shadowGallery6{   
+		left: 250px;
+				}
+		
+		#shadowGallery7{   
+		left: 300px;
+				}
+		
+		#shadowGallery8{   
+		left: 350px;
+				}
+		
+		#shadowGallery9{   
+		left: 400px;
+				}
+		
+		#shadowGallery10{   
+		left: 450px;
+				}
+		
+		#shadowGallery11{   
+		left: 500px;
+				}
+		
+		#shadowGallery12{   
+		left: 550px;
+				}
+		
+		#shadowGallery13{   
+		left: 600px;
+				}
+		
+		#shadowGallery14{   
+		left: 650px;
+				}
+		
+		#shadowGallery15{   
+		left: 700px;
+				}
+		
+		#shadowGallery16{   
+		left: 750px;
+				}
+		
+		#shadowGallery17{   
+		left: 800px;
+				}
+		
+		#shadowGallery18{   
+		left: 850px;
+				}
+		
+		#shadowGallery19{   
+		left: 900px;
+				}
+		
+		#shadowGallery20{   
+		left: 950px;
+				}
+		
+		#shadowGallery21{   
+		left: 1000px;
+				}
+				
+		.shadow {   
+		opacity: 0;
+		/* никак не могу понять, почему тут не работает visibility: hidden ;   а вот opacity: 0; - работает */ 
+				}
+				
+	 
+	 		
+		#footerNav  {
+		padding: 50px 450px 0px 450px; /* Поля вокруг блока */
+						}
+
+		#footerNav li {
+		float: left;
+				
+						}
+		
+		#footerNav ul li  {
+		
+		height: 53px;
+	
+		 		}
+		
+		 
+		#footerNav ul li a {
+		padding-right: 24px;
+		text-decoration: none ;
+		color: #848484;
+		font-family: 'Helvetica Neue Regular',  Helvetica; /* Стиль шрифта*/
+		font-size: 16px; /* Размер шрифта*/
+		 font-weight: 600;
+		 		}			
+		
+		#transparentFullscreenDiv {
+		position: absolute;
+		top: -420px ;
+		left: 100px;
+		background-color: black; 
+		z-index: 5;		 
+		 width: 1400px;
+		 height: 900px;
+		 opacity: 0.7;
+		 display:none;
+		  border-radius:   1px 1px  1px 1px  ; 
+   -webkit-border-radius: 1px 1px  1px 1px; /*закругление углов (Google Chrome)*/
+   -moz-border-radius: 1px 1px  1px 1px; /*закругление углов (FireFox)*/
+   -khtml-border-radius: 1px 1px  1px 1px; /*закругление углов (Safari)*/
+   
+			 }	
+ 
+		.popImage  {
+		position: absolute;
+		top: -220px ;
+		left: 400px;
+		background-color: #e3e3e3; 
+		z-index: 6;		 
+		 width: 1000px;
+		 height: 500px;
+		 opacity: 1;
+		  text-align:left;
+		 display: none;
+		 
+		  border-radius:   1px 1px  1px 1px  ; 
+   -webkit-border-radius: 1px 1px  1px 1px; /*закругление углов (Google Chrome)*/
+   -moz-border-radius: 1px 1px  1px 1px; /*закругление углов (FireFox)*/
+   -khtml-border-radius: 1px 1px  1px 1px; /*закругление углов (Safari)*/
+   
+			 }	
+			
+
+		.popImage .imagInGalleryHidden	  {
+		padding: 70px  20px 20px  150px; /* Поля вокруг фото */
+						}
+
+		.popImage .cross	  {
+		position: absolute;
+		top: 15px; right: 15px;  /* Поля вокруг крестика на закрытие */
+						}							
+
+		.popImage p	  {
+		padding: 10px  100px 20px  150px; /* Поля вокруг текста */
+		line-height: 1.5;
+		color: #848484;
+		font-family: 'Helvetica Neue Regular',  Helvetica; /* Стиль шрифта*/
+		font-size: 22px; /* Размер шрифта*/
+		 font-style: italic;
+						}	
